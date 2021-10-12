@@ -1,8 +1,8 @@
 export const darkTheme = {
   colors: {
-    regularText: 'hsl(0, 0%, 100%',
+    regularText: 'hsl(0, 0%, 100%)',
     inactiveText: 'hsl(235, 45%, 61%)',
-    secondaryText: 'hsl(246, 80%, 60%)',
+    secondaryText: 'hsl(236, 100%, 87%)',
     pageBackground: 'hsl(226, 43%, 10%)',
     cardBackground: 'hsl(235, 46%, 20%)',
     profileBackground: 'hsl(246, 80%, 60%)',
@@ -13,7 +13,7 @@ export const darkTheme = {
     cardSocial: 'hsl(264, 64%, 52%)',
     cardCare: 'hsl(43, 84%, 65%)'
   },
-  fontSizes: {
+  mobileFontSizes: {
     secondaryText: '1.6rem',
     labels: '1.8rem',
     name: '2.4rem',

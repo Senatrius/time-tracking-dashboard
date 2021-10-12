@@ -6,12 +6,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 52.65%;
+    font-size: 62.5%;
   }
 
   body {
     margin: 0;
-    font-size: ${({ theme }) => theme.fontSizes.secondaryText};
+    font-size: ${({ theme }) => theme.mobileFontSizes.secondaryText};
     background: ${({ theme }) => theme.colors.pageBackground};
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
