@@ -31,6 +31,11 @@ const Icon = styled.img`
   width: 7.5rem;
   top: -1rem;
   right: 1.75rem;
+
+  @media screen and (min-width: 767px) {
+    width: 8rem;
+    height: 8rem;
+  }
 `;
 
 const ValueSection = styled.div`
@@ -44,6 +49,14 @@ const ValueSection = styled.div`
   border-radius: 1.5rem;
   z-index: 2;
   gap: 1rem;
+
+  @media screen and (min-width: 767px) {
+    grid-template-areas: 'label button'
+                         'curr .'
+                         'prev .';
+    gap: unset;
+    padding: 3.25rem 3rem 3.75rem;
+  }
 `;
 
 const Label = styled.h2`
@@ -54,6 +67,10 @@ const Label = styled.h2`
   color: ${({ theme }) => theme.colors.regularText};
   font-size: ${({ theme }) => theme.mobileFontSizes.labels};
   font-weight: 500;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 2.25rem;
+  }
 `;
 
 const CurrentValue = styled.p`
@@ -63,6 +80,10 @@ const CurrentValue = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.colors.regularText};
   font-size: ${({ theme }) => theme.mobileFontSizes.values};
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 2.25rem;
+  }
 `;
 
 const PreviousValue = styled.p`
@@ -72,6 +93,10 @@ const PreviousValue = styled.p`
   margin: 0;
   color: ${({ theme }) => theme.colors.secondaryText};
   font-size: ${({ theme }) => theme.mobileFontSizes.secondaryText};
+
+  @media screen and (min-width: 767px) {
+    justify-self: start;
+  }
 `;
 
 const Button = styled.button`
@@ -85,6 +110,10 @@ const Button = styled.button`
   align-self: center;
   justify-self: end;
   cursor: pointer;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 3.5rem;
+  }
 `;
 
 const ButtonIcon = styled.img`

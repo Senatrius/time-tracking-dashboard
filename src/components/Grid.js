@@ -10,6 +10,12 @@ const CardGrid = styled.main`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 2.4rem;
+
+  @media screen and (min-width: 767px) {
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 `;
 
 const DataToggle = styled.button`
@@ -24,6 +30,10 @@ const DataToggle = styled.button`
 
   &:hover, &:focus {
     color: ${({theme}) => theme.colors.secondaryText};
+  }
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 2.5rem;
   }
 `;
 

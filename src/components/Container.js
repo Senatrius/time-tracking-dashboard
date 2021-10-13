@@ -11,6 +11,10 @@ const PageContainer = styled.div`
   width: 87.5%;
   max-width: 111rem;
   min-height: 100vh;
+
+  @media screen and (min-width: 767px) {
+    justify-content: center;
+  }
 `;
 
 const Container = props => {

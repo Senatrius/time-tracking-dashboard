@@ -16,7 +16,11 @@ export const darkTheme = {
   mobileFontSizes: {
     secondaryText: '1.6rem',
     labels: '1.8rem',
-    name: '2.4rem',
+    name: '2.4rem', 
     values: '3.2rem'
+  },
+  desktopFontSizes: {
+    name: '3.8rem',
+    values: '5.4rem'
   }
 }
