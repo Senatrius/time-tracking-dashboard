@@ -34,7 +34,6 @@ const Icon = styled.img`
 
   @media screen and (min-width: 767px) {
     width: 8rem;
-    height: 8rem;
   }
 `;
 
@@ -55,7 +54,11 @@ const ValueSection = styled.div`
                          'curr .'
                          'prev .';
     gap: unset;
-    padding: 3.25rem 3rem 3.75rem;
+    padding: 3rem 3rem 3.5rem;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-top: 4.5rem;
   }
 `;
 
@@ -69,7 +72,11 @@ const Label = styled.h2`
   font-weight: 500;
 
   @media screen and (min-width: 767px) {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-bottom: 2rem;
   }
 `;
 
@@ -82,7 +89,11 @@ const CurrentValue = styled.p`
   font-size: ${({ theme }) => theme.mobileFontSizes.values};
 
   @media screen and (min-width: 767px) {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: ${({ theme }) => theme.desktopFontSizes.values};
   }
 `;
 

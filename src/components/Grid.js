@@ -16,6 +16,11 @@ const CardGrid = styled.main`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
+  @media screen and (min-width: 1279px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 `;
 
 const DataToggle = styled.button`
